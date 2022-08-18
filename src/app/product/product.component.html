@@ -1,0 +1,26 @@
+<body>
+<h1>..TOP BRAND PRODUCTS..</h1> 
+<h2 style="text-align:center">Spend less ! Smile more ! Have better experience !</h2>
+<br>
+<div class="content">
+<mat-grid-list cols="3" rowheight="8" >
+  <mat-grid-tile *ngFor="let product of products" class="cards">
+    <mat-card class="card-content">
+      <mat-card-header>
+        <mat-card-title >{{product.title}}</mat-card-title>
+      </mat-card-header>
+      <img class= "card-img" mat-card-img src="{{product.images[0]}}" />
+      <mat-card-content>
+      <p style="font-weight:550">{{ product.description }}</p>
+      </mat-card-content>
+       <mat-card-actions class="btns">
+       <button (click)="getDetails($event, product)" mat-button >
+        DETAILS
+       </button>
+        <button mat-button>BUY NOW</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+</div>
+</body>

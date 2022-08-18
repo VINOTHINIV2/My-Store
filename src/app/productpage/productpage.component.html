@@ -1,0 +1,28 @@
+<div *ngIf ="product">
+<div class="center">
+  <div class="heading">
+   <h1>{{product.title}}</h1>
+  </div>
+  <div class="images">
+     <img [src]="product.images[0]">
+  </div>
+  <div class="product-labels">  
+    <label><b>Price : </b></label>
+    <span>${{product.price}}</span>
+   <label><b>Category :</b></label>
+    <span>{{product.category}}</span>
+   <label><b>Brand : </b></label>
+    <span>{{product.brand}}</span>
+   <label><b>Id : </b></label>
+   <span>{{product.id}}</span> 
+   <label><b>Stock : </b></label>
+   <span>{{product.stock}}</span> 
+   <label><b>DiscountPercentage : </b></label>
+   <span>{{product.discountPercentage}} %</span>
+   <label><b>Description : </b></label>
+   <span>{{product.description}}</span>
+    <label><b>Rating : </b></label>
+   <span>{{product.rating}}</span>  
+ </div>
+</div>
+</div>

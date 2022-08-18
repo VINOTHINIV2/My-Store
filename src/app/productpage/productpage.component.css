@@ -1,0 +1,27 @@
+.host{
+  .center{
+    display :flex;
+    justify-content :center;
+    flex-flow : wrap;
+    .heading, .images, .product-label
+    {
+      text-align :center;
+      width :100 %;
+    }
+    img {
+      max-width: 100 %;
+      height :auto ;
+     }
+   .product-labels{
+      display: flex;
+      justify-content: center;
+      padding-left: 15px;
+      padding-right: 15px;
+     }
+      label
+      {
+       font-weight: 500;
+       padding-right: 10px;
+      }
+   }
+  }
